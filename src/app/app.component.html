@@ -1,0 +1,4 @@
+<button (click)="toggleDisplay()">Toggle Detals</button>
+<div *ngIf="show">
+  <p *ngFor="let stamps of timeStamps; let idx=index;" [ngStyle]="{ backgroundColor: idx>=4 ? 'skyblue' : 'transparent' }">{{ stamps }}</p>
+</div>
